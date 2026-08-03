@@ -508,6 +508,19 @@ ul {
   gap: 10px;
 }
 
+.skill-category-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
 
 .skill-bar-wrap {
   margin-top: 10px;
@@ -617,49 +630,6 @@ ul {
 
 .footer strong {
   color: var(--color-white);
-}
-
-/* ==========================
-   Skills Page Improvements
-========================== */
-
-.skill-category h3 i {
-    color: var(--color-primary);
-    font-size: 1.2rem;
-    width: 24px;
-    text-align: center;
-}
-
-.skill-category ul {
-    margin-top: 15px;
-}
-
-.skill-category li {
-    line-height: 1.8;
-}
-
-/* ==========================
-   Footer Improvements
-========================== */
-
-.footer p {
-    margin: 8px 0;
-}
-
-.footer a {
-    color: #C9D8E8;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer a:hover {
-    color: #ffffff;
-}
-
-.footer i {
-    width: 22px;
-    color: #9FC0DE;
-    margin-right: 8px;
 }
 
 /* ==========================================================================
