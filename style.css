@@ -1,0 +1,701 @@
+/* ==========================================================================
+   Walid Anebarou — Portfolio
+   Global Stylesheet
+   ========================================================================== */
+
+:root {
+  --color-primary: #1B3A5C;
+  --color-primary-light: #2C5480;
+  --color-bg: #F5F7FA;
+  --color-text: #333333;
+  --color-text-light: #667080;
+  --color-white: #FFFFFF;
+  --color-border: #E1E6ED;
+  --radius: 12px;
+  --shadow: 0 2px 10px rgba(27, 58, 92, 0.08);
+  --shadow-hover: 0 6px 20px rgba(27, 58, 92, 0.14);
+  --max-width: 1100px;
+  --font-main: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar {
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 68px;
+}
+
+.navbar-brand {
+  color: var(--color-white);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 14px 0;
+}
+
+.navbar-brand span {
+  color: #9FC0DE;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.nav-links li a {
+  display: block;
+  color: #D9E4F0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+
+.nav-links li a.active {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  padding: 64px 0 48px;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  color: var(--color-primary);
+  background-color: #E4ECF5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero .description {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Page header (for inner pages)
+   ========================================================================== */
+
+.page-header {
+  padding: 48px 0 24px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  padding: 32px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: -16px auto 28px;
+  font-size: 0.98rem;
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.card .card-meta {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  margin: 8px 0 0 0;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+}
+
+.card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Profile card on home page */
+.profile-card {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border: 4px solid var(--color-white);
+  box-shadow: var(--shadow);
+}
+
+.profile-card h2 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.profile-card .role {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   Badges / Tags
+   ========================================================================== */
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.badge {
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #CFDDEB;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 24px;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.btn-filled {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-filled:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+.btn-small {
+  padding: 7px 16px;
+  font-size: 0.85rem;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   Quick nav grid (home page)
+   ========================================================================== */
+
+.quicknav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.quicknav-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 16px;
+  text-align: center;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.quicknav-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+  border-color: var(--color-border);
+}
+
+.quicknav-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 12px;
+  font-size: 1.1rem;
+}
+
+.quicknav-card h4 {
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Image placeholder
+   ========================================================================== */
+
+.img-placeholder {
+  background-color: #E9EDF3;
+  border: 1px dashed #B9C6D6;
+  border-radius: 8px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 12px;
+}
+
+/* ==========================================================================
+   Timeline (Profil / Experiences)
+   ========================================================================== */
+
+.timeline-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content h4 {
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+
+.timeline-content .timeline-date {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   Two-column layout
+   ========================================================================== */
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ==========================================================================
+   Skills page
+   ========================================================================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.skill-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-category-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.skill-bar-wrap {
+  margin-top: 10px;
+}
+
+.skill-row {
+  margin-bottom: 12px;
+}
+
+.skill-row-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 5px;
+  color: var(--color-text);
+}
+
+.skill-bar-track {
+  background-color: #E9EDF3;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  background-color: var(--color-primary);
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   Documents page
+   ========================================================================== */
+
+.doc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 18px 24px;
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.doc-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.doc-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.doc-info h4 {
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.doc-info p {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.doc-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-box {
+  background-color: #E4ECF5;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: var(--color-primary);
+  font-size: 0.92rem;
+  margin-top: 24px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  background-color: var(--color-primary);
+  color: #C9D8E8;
+  text-align: center;
+  padding: 28px 24px;
+  margin-top: 56px;
+  font-size: 0.88rem;
+}
+
+.footer strong {
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 860px) {
+  .card-grid,
+  .skills-grid,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .quicknav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-links li a {
+    padding: 8px 12px;
+    font-size: 0.88rem;
+  }
+
+  .quicknav-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doc-actions {
+    width: 100%;
+  }
+
+  .doc-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 44px 0 32px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
