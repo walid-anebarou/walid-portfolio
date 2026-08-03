@@ -632,6 +632,49 @@ ul {
   color: var(--color-white);
 }
 
+/* ==========================
+   Skills Page Improvements
+========================== */
+
+.skill-category h3 i {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+.skill-category ul {
+    margin-top: 15px;
+}
+
+.skill-category li {
+    line-height: 1.8;
+}
+
+/* ==========================
+   Footer Improvements
+========================== */
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #C9D8E8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer i {
+    width: 22px;
+    color: #9FC0DE;
+    margin-right: 8px;
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
