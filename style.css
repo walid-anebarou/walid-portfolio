@@ -699,3 +699,209 @@ ul {
     font-size: 1.3rem;
   }
 }
+
+/* ==========================================================================
+   Resource Explorer (page Documents)
+   Nouvelles classes uniquement — n'affecte aucune autre page.
+   Réutilise .card, .doc-row, .doc-info, .doc-icon, .section-title.
+   ========================================================================== */
+
+/* Espacement entre les grands blocs (CV / Stages / Projets / Certifications) */
+.explorer-block {
+  margin-bottom: 48px;
+}
+
+.explorer-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Titres de section avec icône */
+.explorer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.explorer-title i {
+  font-size: 1.1rem;
+}
+
+/* La ligne CV devient un lien cliquable en entier, en gardant le style .doc-row */
+.doc-row-link {
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.doc-row-link:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--color-border);
+}
+
+.doc-open-icon {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.doc-row-link:hover .doc-open-icon {
+  color: var(--color-primary);
+  transform: translate(2px, -2px);
+}
+
+/* Carte "organisation" (stage / projet) — extension visuelle de .card */
+.org-card {
+  padding: 28px;
+}
+
+.org-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.org-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  background-color: #E4ECF5;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.org-header h3 {
+  margin-bottom: 2px;
+}
+
+.org-meta {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Sous-titre de groupe, ex. "Travaux réalisés" à l'intérieur d'une org-card */
+.resource-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-light);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 20px 0 12px;
+}
+
+.resource-group-title i {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+
+/* Grille des ressources cliquables (fichiers / dossiers / galeries) */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.resource-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.resource-item:hover {
+  background-color: var(--color-white);
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.resource-icon {
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+
+.resource-label {
+  color: var(--color-text);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.resource-type {
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* Petite flèche d'ouverture, visible au survol */
+.resource-item::after {
+  content: "\f35d"; /* fa-arrow-up-right-from-square */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.resource-item:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* Grille des certifications : un peu plus compacte */
+.cert-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Responsive — Resource Explorer */
+@media (max-width: 600px) {
+  .org-card {
+    padding: 20px;
+  }
+
+  .org-header {
+    gap: 12px;
+  }
+
+  .org-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.05rem;
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explorer-block {
+    margin-bottom: 36px;
+  }
+}
