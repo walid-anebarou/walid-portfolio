@@ -508,36 +508,6 @@ ul {
   gap: 10px;
 }
 
-
-.skill-bar-wrap {
-  margin-top: 10px;
-}
-
-.skill-row {
-  margin-bottom: 12px;
-}
-
-.skill-row-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.88rem;
-  margin-bottom: 5px;
-  color: var(--color-text);
-}
-
-.skill-bar-track {
-  background-color: #E9EDF3;
-  border-radius: 10px;
-  height: 8px;
-  overflow: hidden;
-}
-
-.skill-bar-fill {
-  background-color: var(--color-primary);
-  height: 100%;
-  border-radius: 10px;
-}
-
 /* ==========================================================================
    Documents page
    ========================================================================== */
