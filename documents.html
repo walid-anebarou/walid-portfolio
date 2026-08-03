@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<!-- ==========================================================================
+     NAVBAR — inchangée
+     ========================================================================== -->
 <nav class="navbar">
   <div class="navbar-inner">
     <a class="navbar-brand" href="index.html">Walid <span>Anebarou</span></a>
@@ -23,6 +26,9 @@
   </div>
 </nav>
 
+<!-- ==========================================================================
+     PAGE HEADER — inchangé
+     ========================================================================== -->
 <header class="page-header">
   <div class="container">
     <h1>Documents &amp; Ressources</h1>
@@ -30,69 +36,411 @@
   </div>
 </header>
 
+<!-- ==========================================================================
+     RESOURCE EXPLORER
+     Chaque ressource est directement cliquable (pas de boutons "Voir/Télécharger").
+     Remplacer les href="#" par les vrais liens (PDF, dossiers Drive, etc.)
+     ========================================================================== -->
 <section class="section">
-  <div class="container">
+  <div class="container explorer">
 
-    <h2 class="section-title">Curriculum Vitae</h2>
-    <div class="doc-row">
-      <div class="doc-info">
-        <div class="doc-icon">CV</div>
-        <div>
-          <h4>CV — Walid Anebarou</h4>
-          <p>Document PDF</p>
+    <!-- ======================================================
+         1. CURRICULUM VITAE
+         ====================================================== -->
+    <div class="explorer-block">
+      <h2 class="section-title explorer-title"><i class="fa-solid fa-id-card"></i> Curriculum Vitae</h2>
+
+      <a href="#" target="_blank" rel="noopener" class="doc-row doc-row-link">
+        <div class="doc-info">
+          <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div>
+            <h4>CV — Walid Anebarou</h4>
+            <p>PDF · Cliquer pour ouvrir</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square doc-open-icon"></i>
+      </a>
+    </div>
+
+    <!-- ======================================================
+         2. STAGES & EXPÉRIENCES PROFESSIONNELLES
+         ====================================================== -->
+    <div class="explorer-block">
+      <h2 class="section-title explorer-title"><i class="fa-solid fa-industry"></i> Stages &amp; Expériences Professionnelles</h2>
+
+      <!-- ---------- Gentherm — Tanger ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-microchip"></i></div>
+          <div>
+            <h3>Gentherm — Tanger</h3>
+            <p class="org-meta">Stage de Fin d'Études · 2025</p>
+          </div>
+        </div>
+
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Rapport PFE</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-display resource-icon"></i>
+            <span class="resource-label">Présentation de soutenance</span>
+            <span class="resource-type">PDF / PPT</span>
+          </a>
+        </div>
+
+        <p class="resource-group-title"><i class="fa-solid fa-toolbox"></i> Travaux réalisés</p>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-cube resource-icon"></i>
+            <span class="resource-label">Modèles CATIA V5</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-drafting-compass resource-icon"></i>
+            <span class="resource-label">Plans techniques</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-layer-group resource-icon"></i>
+            <span class="resource-label">Assemblages</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-puzzle-piece resource-icon"></i>
+            <span class="resource-label">Pièces conçues</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-camera-retro resource-icon"></i>
+            <span class="resource-label">Photos du prototype</span>
+            <span class="resource-type">Galerie</span>
+          </a>
         </div>
       </div>
-      <div class="doc-actions">
-        <a href="#" target="_blank" class="btn btn-small">Voir</a>
-        <a href="#" class="btn btn-small btn-filled">Télécharger</a>
+
+      <!-- ---------- Freezer Maroc — Mohammedia ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-snowflake"></i></div>
+          <div>
+            <h3>Freezer Maroc — Mohammedia</h3>
+            <p class="org-meta">Stage Technique · 2024</p>
+          </div>
+        </div>
+
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Rapport</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-display resource-icon"></i>
+            <span class="resource-label">Présentation</span>
+            <span class="resource-type">PDF / PPT</span>
+          </a>
+        </div>
+
+        <p class="resource-group-title"><i class="fa-solid fa-toolbox"></i> Travaux réalisés</p>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-cube resource-icon"></i>
+            <span class="resource-label">Modèles</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-drafting-compass resource-icon"></i>
+            <span class="resource-label">Plans</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-layer-group resource-icon"></i>
+            <span class="resource-label">Assemblages</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-camera-retro resource-icon"></i>
+            <span class="resource-label">Photos</span>
+            <span class="resource-type">Galerie</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ---------- Polydesign Systems — Tanger ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div>
+            <h3>Polydesign Systems — Tanger</h3>
+            <p class="org-meta">Stage d'Initiation · 2023</p>
+          </div>
+        </div>
+
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Rapport</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-display resource-icon"></i>
+            <span class="resource-label">Présentation</span>
+            <span class="resource-type">PDF / PPT</span>
+          </a>
+        </div>
+
+        <p class="resource-group-title"><i class="fa-solid fa-toolbox"></i> Travaux réalisés</p>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-cube resource-icon"></i>
+            <span class="resource-label">Modèles</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-drafting-compass resource-icon"></i>
+            <span class="resource-label">Plans</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-layer-group resource-icon"></i>
+            <span class="resource-label">Assemblages</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-camera-retro resource-icon"></i>
+            <span class="resource-label">Photos</span>
+            <span class="resource-type">Galerie</span>
+          </a>
+        </div>
       </div>
     </div>
 
-    <h2 class="section-title" style="margin-top: 40px;">Fichiers de projets</h2>
-    <div class="doc-row">
-      <div class="doc-info">
-        <div class="doc-icon">3D</div>
-        <div>
-          <h4>Projet Gentherm — Fichiers CATIA</h4>
-          <p>Modèle 3D &amp; mise en plan</p>
+    <!-- ======================================================
+         3. PROJETS ACADÉMIQUES & RÉALISATIONS
+         ====================================================== -->
+    <div class="explorer-block">
+      <h2 class="section-title explorer-title"><i class="fa-solid fa-diagram-project"></i> Projets Académiques &amp; Réalisations</h2>
+
+      <!-- ---------- Bras Robotisé ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <h3>Bras Robotisé</h3>
+            <p class="org-meta">Projet BTS · Conception mécanique</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Rapport</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-display resource-icon"></i>
+            <span class="resource-label">Présentation</span>
+            <span class="resource-type">PDF / PPT</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-layer-group resource-icon"></i>
+            <span class="resource-label">Assemblage CATIA</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-drafting-compass resource-icon"></i>
+            <span class="resource-label">Plans</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-cube resource-icon"></i>
+            <span class="resource-label">Pièces 3D</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-camera-retro resource-icon"></i>
+            <span class="resource-label">Images</span>
+            <span class="resource-type">Galerie</span>
+          </a>
         </div>
       </div>
-      <div class="doc-actions">
-        <a href="#" target="_blank" class="btn btn-small">Voir</a>
-        <a href="#" class="btn btn-small btn-filled">Télécharger</a>
+
+      <!-- ---------- Smart Stock (IA) ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div>
+            <h3>Smart Stock (IA)</h3>
+            <p class="org-meta">Projet · Intelligence artificielle</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Rapport</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-display resource-icon"></i>
+            <span class="resource-label">Présentation</span>
+            <span class="resource-type">PDF / PPT</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-code resource-icon"></i>
+            <span class="resource-label">Code source</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-desktop resource-icon"></i>
+            <span class="resource-label">Captures d'écran</span>
+            <span class="resource-type">Galerie</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-folder-open resource-icon"></i>
+            <span class="resource-label">Fichiers</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ---------- TP MATLAB ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+          <div>
+            <h3>TP MATLAB</h3>
+            <p class="org-meta">Travaux pratiques · Simulation</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-file-lines resource-icon"></i>
+            <span class="resource-label">Comptes rendus</span>
+            <span class="resource-type">PDF</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-code resource-icon"></i>
+            <span class="resource-label">Scripts MATLAB</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-chart-line resource-icon"></i>
+            <span class="resource-label">Résultats</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-folder-open resource-icon"></i>
+            <span class="resource-label">Fichiers</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ---------- Arduino ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-brands fa-usb"></i></div>
+          <div>
+            <h3>Arduino</h3>
+            <p class="org-meta">Projet · Électronique embarquée</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-code resource-icon"></i>
+            <span class="resource-label">Code</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-diagram-project resource-icon"></i>
+            <span class="resource-label">Schémas électroniques</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-camera-retro resource-icon"></i>
+            <span class="resource-label">Images</span>
+            <span class="resource-type">Galerie</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-folder-open resource-icon"></i>
+            <span class="resource-label">Fichiers</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ---------- Tinkercad ---------- -->
+      <div class="card org-card">
+        <div class="org-header">
+          <div class="org-icon"><i class="fa-solid fa-cubes"></i></div>
+          <div>
+            <h3>Tinkercad</h3>
+            <p class="org-meta">Simulations & prototypage virtuel</p>
+          </div>
+        </div>
+        <div class="resource-grid">
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-cube resource-icon"></i>
+            <span class="resource-label">Simulations</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-desktop resource-icon"></i>
+            <span class="resource-label">Captures</span>
+            <span class="resource-type">Galerie</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="resource-item">
+            <i class="fa-solid fa-folder-open resource-icon"></i>
+            <span class="resource-label">Fichiers</span>
+            <span class="resource-type">Dossier</span>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="doc-row">
-      <div class="doc-info">
-        <div class="doc-icon">3D</div>
-        <div>
-          <h4>Projet Bras Robotique — Fichiers CATIA</h4>
-          <p>Assemblage &amp; dimensionnement</p>
-        </div>
-      </div>
-      <div class="doc-actions">
-        <a href="#" target="_blank" class="btn btn-small">Voir</a>
-        <a href="#" class="btn btn-small btn-filled">Télécharger</a>
-      </div>
-    </div>
+    <!-- ======================================================
+         4. CERTIFICATIONS & FORMATIONS
+         ====================================================== -->
+    <div class="explorer-block">
+      <h2 class="section-title explorer-title"><i class="fa-solid fa-certificate"></i> Certifications &amp; Formations</h2>
 
-    <h2 class="section-title" style="margin-top: 40px;">Liens Google Drive</h2>
-    <div class="doc-row">
-      <div class="doc-info">
-        <div class="doc-icon">GD</div>
-        <div>
-          <h4>Dossier complet des projets</h4>
-          <p>Accès aux fichiers via Google Drive</p>
-        </div>
-      </div>
-      <div class="doc-actions">
-        <a href="#" target="_blank" class="btn btn-small btn-filled">Voir</a>
+      <div class="resource-grid cert-grid">
+        <a href="#" target="_blank" rel="noopener" class="resource-item">
+          <i class="fa-solid fa-award resource-icon"></i>
+          <span class="resource-label">Google Project Management</span>
+          <span class="resource-type">PDF</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="resource-item">
+          <i class="fa-solid fa-award resource-icon"></i>
+          <span class="resource-label">SolidWorks Essentials</span>
+          <span class="resource-type">PDF</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="resource-item">
+          <i class="fa-solid fa-award resource-icon"></i>
+          <span class="resource-label">MATLAB</span>
+          <span class="resource-type">PDF</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="resource-item">
+          <i class="fa-solid fa-award resource-icon"></i>
+          <span class="resource-label">Python</span>
+          <span class="resource-type">PDF</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="resource-item">
+          <i class="fa-solid fa-award resource-icon"></i>
+          <span class="resource-label">Autres attestations</span>
+          <span class="resource-type">Dossier</span>
+        </a>
       </div>
     </div>
 
   </div>
 </section>
+
+<!-- ==========================================================================
+     FOOTER — inchangé
+     ========================================================================== -->
 <footer class="footer">
     <p><strong>Walid Anebarou</strong> — Mechanical Design & Innovation</p>
     <p><strong>Contact</strong></p>
