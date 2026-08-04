@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Walid Anebarou — Arduino</title>
+<title>Walid Anebarou — Robot de soudage</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -23,61 +23,82 @@
   </div>
 </nav>
 
-<header class="page-header">
-  <div class="container">
-    <nav class="breadcrumb" aria-label="Fil d’Ariane"><a href="documents.html">Documents</a><i class="fa-solid fa-angle-right crumb-sep"></i><a href="projets.html">Projets</a><i class="fa-solid fa-angle-right crumb-sep"></i><span class="crumb-current">Arduino</span></nav>
-    <h1>Arduino</h1>
-    <p>Projet embarqué — code, schémas et prototypage.</p>
-  </div>
-</header>
+<span class="crumb-current">Robot de soudage</span>
 
+<h1>Robot de soudage</h1>
+
+<p>Projet de conception mécanique réalisé sous CATIA V5.</p>
+  
 <section class="section">
   <div class="container">
 
     <div class="explorer-grid">
-      <!-- Remplacer par le lien réel (ex. GitHub) -->
-      <a href="assets/projets/arduino/code/" target="_blank" rel="noopener" class="explorer-card">
-        <div class="explorer-card-icon"><i class="fa-solid fa-code"></i></div>
-        <div class="explorer-card-body">
-          <h3>Code</h3>
-          
-          <p>Ouvrir le dossier / dépôt du code Arduino.</p>
+
+      <!-- Modèle 3D -->
+      <a href="assets/projets/robot-soudage/modele-3d/" target="_blank" rel="noopener" class="explorer-card">
+        <div class="explorer-card-icon">
+          <i class="fa-solid fa-cube"></i>
         </div>
-        <div class="explorer-card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-      </a>
-      <!-- Remplacer par le chemin réel -->
-      <a href="assets/projets/arduino/schemas.pdf" target="_blank" rel="noopener" class="explorer-card">
-        <div class="explorer-card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+
         <div class="explorer-card-body">
-          <h3>Schémas électroniques</h3>
-          
-          <p>Ouvrir directement les schémas (PDF).</p>
+          <h3>Modèle 3D</h3>
+          <p>Ouvrir le dossier contenant les modèles CATIA V5.</p>
         </div>
-        <div class="explorer-card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="explorer-card-arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
       </a>
-      <!-- Remplacer par le lien réel de la galerie -->
-      <a href="assets/projets/arduino/images/" target="_blank" rel="noopener" class="explorer-card">
-        <div class="explorer-card-icon"><i class="fa-solid fa-images"></i></div>
+
+      <!-- Assemblage -->
+      <a href="assets/projets/robot-soudage/assemblage/" target="_blank" rel="noopener" class="explorer-card">
+        <div class="explorer-card-icon">
+          <i class="fa-solid fa-gears"></i>
+        </div>
+
+        <div class="explorer-card-body">
+          <h3>Assemblage</h3>
+          <p>Ouvrir le dossier de l'assemblage CATIA.</p>
+        </div>
+
+        <div class="explorer-card-arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </a>
+
+      <!-- Plans techniques -->
+      <a href="assets/projets/robot-soudage/plans/" target="_blank" rel="noopener" class="explorer-card">
+        <div class="explorer-card-icon">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </div>
+
+        <div class="explorer-card-body">
+          <h3>Plans techniques</h3>
+          <p>Ouvrir les plans de fabrication.</p>
+        </div>
+
+        <div class="explorer-card-arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </a>
+
+      <!-- Images -->
+      <a href="assets/projets/robot-soudage/images/" target="_blank" rel="noopener" class="explorer-card">
+        <div class="explorer-card-icon">
+          <i class="fa-solid fa-images"></i>
+        </div>
+
         <div class="explorer-card-body">
           <h3>Images</h3>
-          
-          <p>Ouvrir la galerie d’images du montage.</p>
+          <p>Voir les captures du projet.</p>
         </div>
-        <div class="explorer-card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-      </a>
-      <!-- Remplacer par le lien réel du dossier -->
-      <a href="assets/projets/arduino/fichiers/" target="_blank" rel="noopener" class="explorer-card">
-        <div class="explorer-card-icon"><i class="fa-solid fa-folder-open"></i></div>
-        <div class="explorer-card-body">
-          <h3>Fichiers</h3>
-          
-          <p>Ouvrir le dossier complet des fichiers.</p>
-        </div>
-        <div class="explorer-card-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-      </a>
-    </div>
 
-    
+        <div class="explorer-card-arrow">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </a>
+
+    </div>
 
     <div class="back-nav">
       <a href="projets.html" class="btn btn-small btn-back">
@@ -89,10 +110,11 @@
 </section>
 
 <footer class="footer">
-  <p><strong>Walid Anebarou</strong> — Mechanical Design & Innovation </p>
-  <p> w.anebarou04@gmail.com </p>
-  <p> www.linkedin.com/in/walid-anebarou-804b2224a </p>
-  </p>Téléphone : +212 650868049</p>
+    <p><strong>Walid Anebarou</strong> — Mechanical Design & Innovation</p>
+    <p><strong>Contact</strong></p>
+    <p> <i class="fa-solid fa-envelope"></i> <a href="mailto:w.anebarou04@gmail.com"> w.anebarou04@gmail.com </a> </p>
+    <p> <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/walid-anebarou-804b2224a"    target="_blank"    rel="noopener noreferrer"> linkedin.com/in/walid-anebarou-804b2224a</a> </p>
+    <p> <i class="fa-solid fa-phone"></i> <a href="tel:+212650868049"> +212 650 868 049 </a> </p>
 </footer>
 
 </body>
