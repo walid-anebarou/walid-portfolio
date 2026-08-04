@@ -790,10 +790,6 @@ ul {
 .explorer-card-body {
   flex: 1;
   min-width: 0;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 140px;
 }
 
 .explorer-card-body h3 {
@@ -863,4 +859,23 @@ ul {
     height: 46px;
     font-size: 1.15rem;
   }
+}
+
+/* Badges des cartes Certifications uniquement */
+.explorer-card .badge-list{
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.explorer-card .badge:last-child{
+    flex-basis: 100%;
+}
+
+.explorer-card-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
 }
