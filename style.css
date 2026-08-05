@@ -750,16 +750,16 @@ ul {
 
 /* --- Carte cliquable de l'explorateur --- */
 
-.explorer-card {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 24px;
-  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+.explorer-card{
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease;
 }
 
 .explorer-card:hover {
@@ -782,6 +782,11 @@ ul {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.explorer-card-icon,
+.explorer-card-arrow{
+    align-self:center;
+}
+
 .explorer-card:hover .explorer-card-icon {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -790,6 +795,9 @@ ul {
 .explorer-card-body {
   flex: 1;
   min-width: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .explorer-card-body h3 {
@@ -802,6 +810,14 @@ ul {
   color: var(--color-text-light);
   font-size: 0.9rem;
   margin: 0;
+}
+
+.explorer-card-body .badge-list{
+    margin: auto 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
 }
 
 .explorer-card-meta {
